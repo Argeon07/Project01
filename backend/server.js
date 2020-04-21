@@ -6,6 +6,9 @@ const app = express();
 //connectDB();
 mongoose.connect('mongodb+srv://hernan123:hernan123@proyect01-ve8e0.mongodb.net/test?retryWrites=true&w=majority');
 
+// Init Middleware
+app.use(express.json());
+
 app.get('/', (req, res) => res.send('API Running'));
 
 //Routes
