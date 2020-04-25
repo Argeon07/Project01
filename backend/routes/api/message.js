@@ -38,8 +38,8 @@ router.post(
   }
 );
 
-// @route    GET api/message
-// @desc     Get all message
+// @route    GET api/messages
+// @desc     Get all messages
 // @access   Private
 router.get("/", auth, async (req, res) => {
   try {
