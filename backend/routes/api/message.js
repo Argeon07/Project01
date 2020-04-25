@@ -78,7 +78,7 @@ router.delete("/:id", auth, async (req, res) => {
     const message = await Message.findById(req.params.id);
 
       if (!req.params.id.match(/^[0-9a-fA-F]{24}$/) || !message) {
-      return res.status(404).json({ msg: "Post not found" });
+      return res.status(404).json({ msg: "Message not found" });
     }
 
     // Check user
@@ -88,7 +88,7 @@ router.delete("/:id", auth, async (req, res) => {
 
     await message.remove();
 
-    res.json({ msg: "Post removed" });
+    res.json({ msg: "Message removed" });
   } catch (err) {
     console.error(err.message);
 
