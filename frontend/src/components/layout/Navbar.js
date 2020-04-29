@@ -1,22 +1,26 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { logout } from '../../actions/auth';
+import React from "react";
 
 const Navbar = () => {
-    return(
-        <div>
-            
-        </div>
-    )
+  return (
+    <nav className="navbar bg-dark">
+      <h1>
+        <a href="index.html">
+          <i className="fas fa-code"></i> Serendipity
+        </a>
+      </h1>
+      <ul>
+        <li>
+          <a href="profiles.html">Contacts</a>
+        </li>
+        <li>
+          <a href="register.html">Register</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-
-export default connect(
-  mapStateToProps,
-  { logout }
-)(Navbar);
+export default Navbar;
