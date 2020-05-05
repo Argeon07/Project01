@@ -33,5 +33,9 @@
   "bugs": {
     "url": "https://github.com/argeon07/Project01/issues"
   },
-  "homepage": "https://github.com/argeon07/Project01#readme"
+  "homepage": "https://github.com/argeon07/Project01#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  }
 }

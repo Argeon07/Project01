@@ -3,8 +3,8 @@ const connectDB = require("./config/db");
 const mongoose = require('mongoose');
 const app = express();
 
-//connectDB();
-mongoose.connect('mongodb+srv://hernan123:hernan123@proyect01-ve8e0.mongodb.net/test?retryWrites=true&w=majority');
+connectDB();
+//mongoose.connect('mongodb+srv://hernan123:hernan123@proyect01-ve8e0.mongodb.net/test?retryWrites=true&w=majority');
 
 // Init Middleware
 app.use(express.json());
