@@ -24,7 +24,7 @@ const EditProfile = ({
         status: loading || !profile.status ? '' : profile.status,
         bio: loading || !profile.bio ? '' : profile.bio,
       })
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const { location, status, bio } = formData;
 
